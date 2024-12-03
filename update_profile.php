@@ -54,7 +54,6 @@ if (isset($_POST['update_profile'])) {
 
 // Handle account deletion
 if (isset($_POST['delete_account'])) {
-    // Delete profile image if not default
     pg_query($conn, "DELETE FROM shelves WHERE username = '$user_name'") or die('Failed to delete from shelves');
 
     if (!empty($user_data['image']) && $user_data['image'] !== 'default_image.jpg') {

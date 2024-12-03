@@ -3,7 +3,7 @@
 $host = 'localhost'; 
 $dbname = 'bookberryss'; 
 $username = 'postgres'; 
-$password = 'kamisukses'; 
+$password = 'kamisukses';
 
 try {
     // Koneksi ke PostgreSQL menggunakan PDO
